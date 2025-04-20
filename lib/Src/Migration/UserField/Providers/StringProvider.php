@@ -6,7 +6,7 @@ use Base\Module\Src\Migration\UserField\Interface\UserFieldProvider;
 
 class StringProvider extends UserFieldProvider
 {
-    public function getType(): string
+    public static function getType(): string
     {
         return 'string';
     }
