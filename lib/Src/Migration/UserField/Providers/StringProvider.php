@@ -28,11 +28,4 @@ class StringProvider extends UserFieldProvider
         $this->settings['DEFAULT_VALUE'] = $defaultValue;
         return $this;
     }
-
-    public function getParamsToArray(): array
-    {
-        return array_merge(parent::getParamsToArray(), [
-            'SETTINGS' => $this->settings,
-        ]);
-    }
 }
